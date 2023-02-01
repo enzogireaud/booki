@@ -133,7 +133,7 @@ header nav {
 .hebergement {
   display: grid;
   grid-template-columns: 65% 26%;
-  gap: 50px;
+  gap: 80px;
 }
 .hebergement-ville {
   background: rgba(128, 128, 128, 0.177);
@@ -142,8 +142,12 @@ header nav {
   border-radius: 20px;
   max-height: 600px;
 }
+.hebergement-ville h2 {
+  margin: 0 15px;
+  font-size: 1.2em;
+}
 .articles-container {
-  padding: 20px;
+  padding: 20px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -156,8 +160,8 @@ header nav {
   padding: 5px;
   border-radius: 20px;
   -webkit-box-shadow: 3px 3px 27px -3px rgba(0, 0, 0, 0.78);
-  box-shadow: 3px 3px 27px -3px rgba(0, 0, 0, 0.537);
-  width: 80%;
+  box-shadow: 3px 3px 27px -3px rgba(0, 0, 0, 0.217);
+  width: 90%;
   cursor: pointer;
 }
 .article h3 {
@@ -195,6 +199,7 @@ header nav {
 }
 .hebergement-ville span {
   font-weight: bold;
+  margin: 0 15px;
 }
 /* Parti populaire */
 .populaires {
@@ -203,6 +208,17 @@ header nav {
   padding: 20px;
   border-radius: 20px;
   max-height: 450;
+  position: relative;
+}
+.populaires h2 {
+  font-size: 1.2em;
+}
+#chart {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  color: blue;
+  cursor: pointer;
 }
 .populaire-container {
   margin-top: 30px;
@@ -217,6 +233,9 @@ header nav {
   background: white;
   border-radius: 15px;
   max-height: 110px;
+  -webkit-box-shadow: 3px 3px 27px -3px rgba(0, 0, 0, 0.78);
+  box-shadow: 3px 3px 27px -3px rgba(0, 0, 0, 0.226);
+  cursor: pointer;
 }
 .populaire-article img {
   max-height: 105px;
