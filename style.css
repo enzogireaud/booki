@@ -194,9 +194,6 @@ header nav {
 .rate li {
   cursor: pointer;
 }
-.rate li:hover {
-  color: blue;
-}
 .hebergement-ville span {
   font-weight: bold;
   margin: 0 15px;
@@ -260,4 +257,28 @@ header nav {
 .populaire-text .rate {
   position: absolute;
   bottom: 5%;
+}
+/* ACTIVITES */
+.activite-container {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+.activite-article {
+  cursor: pointer;
+  border-radius: 25px;
+  -webkit-box-shadow: 3px 3px 27px -3px rgba(0, 0, 0, 0.78);
+  box-shadow: 3px 3px 27px -3px rgba(0, 0, 0, 0.226);
+}
+.activite-article h4 {
+  padding: 15px;
+  font-size: 0.9em;
+}
+.activite-article img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
 }
