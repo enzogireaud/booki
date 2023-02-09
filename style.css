@@ -9,6 +9,9 @@
   box-sizing: border-box;
   list-style: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   width: 95%;
   margin: 0 auto;
@@ -29,6 +32,7 @@ header nav {
 .nav-ul {
   display: flex;
   justify-content: space-evenly;
+  gap: 10px;
 }
 .nav-ul li {
   padding-top: 10px;
@@ -37,9 +41,16 @@ header nav {
   align-items: center;
   cursor: pointer;
 }
+.nav-ul a {
+  text-decoration: none;
+  color: black;
+}
+.nav-ul a:hover {
+  color: #0065fc;
+}
 .nav-ul li:hover {
-  border-top: 2px solid blue;
-  color: blue;
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
 }
 
 /* Section "recherche" */
@@ -77,7 +88,7 @@ header nav {
   font-weight: 600;
 }
 #submit {
-  background: rgb(0, 106, 255);
+  background: #0065fc;
   color: white;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -86,12 +97,11 @@ header nav {
   cursor: pointer;
 }
 /* Parti filtres */
-.filtres {
-  width: 60%;
-}
+
 .filtres ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 50px;
 }
 .filtres p {
   padding-top: 10px;
@@ -108,7 +118,7 @@ header nav {
 }
 .filtres i {
   padding: 0 5px;
-  color: rgb(0, 76, 255);
+  color: #0065fc;
 }
 .infos {
   margin-top: 20px;
@@ -126,11 +136,11 @@ header nav {
   align-items: center;
   border: 1px solid rgba(66, 84, 97, 0.367);
   border-radius: 50%;
-  color: rgb(0, 68, 255);
+  color: #0065fc;
 }
 /* Parti hébergement */
 
-.hebergement {
+#hebergement {
   display: grid;
   grid-template-columns: 65% 26%;
   gap: 80px;
@@ -178,7 +188,7 @@ header nav {
 }
 .rate {
   font-size: 0.7em;
-  color: rgb(73, 73, 226);
+  color: #0065fc;
 }
 .article img {
   border-top-left-radius: 15px;
@@ -214,7 +224,7 @@ header nav {
   position: absolute;
   right: 5%;
   top: 5%;
-  color: blue;
+  color: #0065fc;
   cursor: pointer;
 }
 .populaire-container {
@@ -236,6 +246,7 @@ header nav {
 }
 .populaire-article img {
   max-height: 105px;
+
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -298,3 +309,55 @@ footer {
   font-weight: 300;
   font-size: 0.9em;
 }
+
+/* RESPONSIVE TABLETTE */
+@media screen and (max-width: 992px) {
+  /* NAV */
+  .nav-ul {
+    gap: 20px;
+    margin-right: 50px;
+  }
+  /* FILTRES */
+  .filtres ul {
+    gap: 20px;
+  }
+  .filtres li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 40px;
+    font-size: 0.9em;
+  }
+  /* HEBERGEMENT */
+  #hebergement {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .hebergement-ville {
+    margin: 0;
+  }
+  /* POPULAIRES */
+  .populaire-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .populaire-article {
+    width: 30%;
+  }
+  .populaire-text h3 {
+    font-size: 0.75em;
+  }
+  .populaire-text h4 {
+    font-size: 0.7em;
+  }
+  /* ACTIVITE */
+  .activite-container {
+    gap: 20px;
+  }
+  .activite-article img {
+    height: 270px;
+  }
+}
+/* PHONE */
