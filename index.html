@@ -35,7 +35,7 @@
           <h2>Touvez votre hébergement pour des vacances de rêves</h2>
           <p>En plein centre ville ou en pleine nature</p>
         </div>
-        <form>
+        <form id="desktop-form">
           <label for="barre-recherche"
             ><i class="fa-solid fa-location-dot"></i
           ></label>
@@ -44,7 +44,18 @@
             id="barre-recherche"
             placeholder="Marseille, France"
           />
-          <input type="submit" value="Rechercher" id="submit" />
+          <input type="submit" value="Rechercher" class="submit" />
+        </form>
+        <form id="mobile-form">
+          <label for="barre-recherche"
+            ><i class="fa-solid fa-location-dot"></i
+          ></label>
+          <input
+            type="text"
+            id="barre-recherche"
+            placeholder="Marseille, France"
+          />
+          <i class="fa-solid fa-magnifying-glass submit" id="loupe"></i>
         </form>
         <div class="filtres">
           <ul>
