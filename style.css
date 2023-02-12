@@ -81,11 +81,11 @@ header nav {
 #mobile-form {
   display: none;
 }
-#barre-recherche {
+.barre-recherche {
   padding: 0 10px;
   font-family: "Raleway", sans-serif;
 }
-#barre-recherche::placeholder {
+.barre-recherche::placeholder {
   color: black;
   font-size: 1em;
   font-weight: 600;
@@ -106,9 +106,14 @@ header nav {
   justify-content: flex-start;
   gap: 50px;
 }
-.filtres p {
+.filtres .filtre-title {
   padding-top: 10px;
   font-weight: bold;
+  border: none;
+  cursor: default;
+}
+.filtres .filtre-title:hover {
+  background: none;
 }
 .filtres li {
   border: 0.5px solid rgba(128, 128, 128, 0.475);
@@ -172,7 +177,6 @@ header nav {
   text-align: left;
   padding: 5px;
   border-radius: 20px;
-  -webkit-box-shadow: 3px 3px 27px -3px rgba(0, 0, 0, 0.78);
   box-shadow: 3px 3px 27px -3px rgba(0, 0, 0, 0.217);
   width: 90%;
   cursor: pointer;
@@ -217,7 +221,6 @@ header nav {
   margin: 60px 0;
   padding: 20px;
   border-radius: 20px;
-  max-height: 450;
   position: relative;
 }
 .populaires h2 {
@@ -243,7 +246,6 @@ header nav {
   background: white;
   border-radius: 15px;
   max-height: 110px;
-  -webkit-box-shadow: 3px 3px 27px -3px rgba(0, 0, 0, 0.78);
   box-shadow: 3px 3px 27px -3px rgba(0, 0, 0, 0.226);
   cursor: pointer;
 }
@@ -282,7 +284,6 @@ header nav {
 .activite-article {
   cursor: pointer;
   border-radius: 25px;
-  -webkit-box-shadow: 3px 3px 27px -3px rgba(0, 0, 0, 0.78);
   box-shadow: 3px 3px 27px -3px rgba(0, 0, 0, 0.226);
 }
 .activite-article h4 {
@@ -304,8 +305,9 @@ footer {
   padding: 35px;
   min-height: 180px;
 }
-.footer-ul p {
+.footer-ul .footer-title {
   font-weight: bold;
+  font-size: 1em;
 }
 .footer-ul li {
   margin: 15px 0;
@@ -425,7 +427,8 @@ footer {
       "b c"
       "d e";
   }
-  .filtres ul p {
+  .filtres .filtre-title {
+    justify-content: start;
     grid-area: a;
   }
   .infos {
@@ -480,7 +483,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  footer p {
+  footer .footer-title {
     margin: 20px 0;
   }
 }

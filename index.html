@@ -21,9 +21,9 @@
         <h1><img src="./img/logo/Booki.png" alt="logo" id="logo-booki" /></h1>
         <ul class="nav-ul">
           <li><a href="#hebergement">Hébergements</a></li>
-         <li>
-          <a href="#activite">Activités</a>
-         </li> 
+          <li>
+            <a href="#activite">Activités</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -36,30 +36,26 @@
           <p>En plein centre ville ou en pleine nature</p>
         </div>
         <form id="desktop-form">
-          <label for="barre-recherche"
-            ><i class="fa-solid fa-location-dot"></i
-          ></label>
+          <label><i class="fa-solid fa-location-dot"></i></label>
           <input
             type="text"
-            id="barre-recherche"
+            class="barre-recherche"
             placeholder="Marseille, France"
           />
           <input type="submit" value="Rechercher" class="submit" />
         </form>
         <form id="mobile-form">
-          <label for="barre-recherche"
-            ><i class="fa-solid fa-location-dot"></i
-          ></label>
+          <label><i class="fa-solid fa-location-dot"></i></label>
           <input
             type="text"
-            id="barre-recherche"
+            class="barre-recherche"
             placeholder="Marseille, France"
           />
           <i class="fa-solid fa-magnifying-glass submit" id="loupe"></i>
         </form>
         <div class="filtres">
           <ul>
-            <p>Filtres</p>
+            <li class="filtre-title">Filtres</li>
             <li><i class="fa-solid fa-money-bill-wave"></i>Economique</li>
             <li><i class="fa-solid fa-person"></i>Familliale</li>
             <li><i class="fa-solid fa-heart"></i>Romantique</li>
@@ -172,10 +168,13 @@
         </div>
         <div class="populaires">
           <h2>Les plus populaires</h2>
-        <span id="chart"><i class="fa-solid fa-chart-line"></i></span>
+          <span id="chart"><i class="fa-solid fa-chart-line"></i></span>
           <div class="populaire-container">
             <article class="populaire-article">
-              <img src="./img/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo-matin" />
+              <img
+                src="./img/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="photo-matin"
+              />
               <div class="populaire-text">
                 <h3>Hôtel le soleil du matin</h3>
                 <h4>Nuit à partir de 128€</h4>
@@ -189,7 +188,10 @@
               </div>
             </article>
             <article class="populaire-article">
-              <img src="./img/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo-eau" />
+              <img
+                src="./img/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                alt="photo-eau"
+              />
               <div class="populaire-text">
                 <h3>Chambre d'hôtes Au coeur de l'eau</h3>
                 <h4>Nuit à partir de 71€</h4>
@@ -203,7 +205,10 @@
               </div>
             </article>
             <article class="populaire-article">
-              <img src="./img/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo-blanc" />
+              <img
+                src="./img/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                alt="photo-blanc"
+              />
               <div class="populaire-text">
                 <h3>Hôtel bleu et blanc</h3>
                 <h4>Nuit à partir de 68€</h4>
@@ -215,6 +220,7 @@
                   <li class="star"><i class="fa-solid fa-star"></i></li>
                 </ul>
               </div>
+            </article>
           </div>
         </div>
       </section>
@@ -223,40 +229,51 @@
         <h2>Activités à Marseille</h2>
         <div class="activite-container">
           <article class="activite-article">
-            <img src="./img/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo-reno" />
+            <img
+              src="./img/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+              alt="photo-reno"
+            />
             <h4>Vieux port</h4>
           </article>
           <article class="activite-article">
-            <img src="./img/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo-paul" />
+            <img
+              src="./img/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+              alt="photo-paul"
+            />
             <h4>Fort de Pomègues</h4>
           </article>
           <article class="activite-article">
-            <img src="./img/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo-kilyan" />
+            <img
+              src="./img/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+              alt="photo-kilyan"
+            />
             <h4>Parc national des Calanques</h4>
           </article>
           <article class="activite-article">
-            <img src="./img/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo-florian" />
+            <img
+              src="./img/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+              alt="photo-florian"
+            />
             <h4>Notre-Dame-de-la-Garde</h4>
           </article>
         </div>
-      
       </section>
     </main>
     <!-- FOOTER -->
     <footer>
       <ul class="footer-ul">
-        <p>A propos</p>
+        <li class="footer-title">A propos</li>
         <li>Fonctionnement du site</li>
         <li>Conditions générales</li>
         <li>Données et confidentialités</li>
       </ul>
       <ul class="footer-ul">
-        <p>Nos hébergement</p>
+        <li class="footer-title">Nos hébergement</li>
         <li>Charte qualité</li>
         <li>Proposez votre hôtel</li>
       </ul>
       <ul class="footer-ul">
-        <p>Assistance</p>
+        <li class="footer-title">Assistance</li>
         <li>Centre d'aide</li>
         <li>Nous contacter</li>
       </ul>
