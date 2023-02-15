@@ -207,6 +207,7 @@ header nav {
 .rate {
   display: flex;
   margin-left: 5px;
+  padding-bottom: 5px;
 }
 .rate li {
   cursor: pointer;
@@ -223,13 +224,14 @@ header nav {
   border-radius: 20px;
   position: relative;
 }
+.populaire-text {
+  display: flex;
+  justify-content: space-between;
+}
 .populaires h2 {
   font-size: 1.2em;
 }
 #chart {
-  position: absolute;
-  right: 5%;
-  top: 5%;
   color: #0065fc;
   cursor: pointer;
 }
@@ -439,7 +441,8 @@ footer {
     flex-direction: column-reverse;
   }
   .populaires {
-    margin: 0;
+    margin-top: 0;
+    padding: 30px;
     border-radius: 0;
   }
   .populaire-container {
@@ -447,32 +450,37 @@ footer {
     flex-direction: column;
   }
   .populaire-article {
-    width: 90%;
-    margin: 5px 0;
+    width: 100%;
+    margin: 5px auto;
     min-height: 110px;
   }
   .hebergement-ville {
     background: white;
     max-height: fit-content;
+    padding: 30px;
+  }
+  .hebergement-ville h2 {
+    margin: 0;
   }
   .articles-container {
     display: flex;
     flex-direction: column;
   }
   .article {
-    margin: 10px 0;
+    width: 100%;
+    margin: 10px auto;
   }
   /* ACTIVITE */
   #activite {
-    margin-top: 20px;
-    padding: 25px;
+    padding: 30px;
   }
   .activite-container {
     display: flex;
     flex-direction: column;
   }
   .activite-article {
-    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
   }
   .activite-article img {
     height: 120px;
