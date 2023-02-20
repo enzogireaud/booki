@@ -224,7 +224,7 @@ header nav {
   border-radius: 20px;
   position: relative;
 }
-.populaire-text {
+.populaire-header {
   display: flex;
   justify-content: space-between;
 }
@@ -449,6 +449,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
+
   .populaire-article {
     width: 100%;
     margin: 5px auto;
